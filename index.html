@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Madimi+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="list">
+        <form class="task-form">
+            <h1>To Do List</h1>
+            <div class="quest-button">
+                <div>
+                    <label for="title">Title</label> <br>
+                    <input type="text" id="title" name="title" required>
+                </div>
+    
+                <div>
+                    <label for="priority">Priority</label> <br>
+                    <select id="priority" name="priority">
+                        <option value="none"></option>
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select>
+                </div>
+    
+                <div>
+                    <p></p>
+                    <button id="btn" onclick="addNew(event)">Add new +</button>
+                </div>
+            </div>
+        </form>
+
+        <div id="task-list">         
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>

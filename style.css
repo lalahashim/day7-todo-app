@@ -1,0 +1,133 @@
+body{
+    background-color: #E69DB8;
+    display: flex;
+    justify-content: center;
+    font-family: "Libre Baskerville";
+}
+section{
+    background-color: white;
+    width: 900px;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 17px;
+}
+
+h1{
+    margin: 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+input, select{
+    border: 1px solid #E53888;
+    border-radius: 10px;
+    width: 270px;
+    height: 30px;
+    font-size: 15px;
+    padding-left: 5px;
+}
+input:focus, select:focus,
+input:hover, select:hover {
+    outline: none;
+    box-shadow: 0 3px 6px #E69DB8;
+}
+select{
+    cursor: pointer;
+    height: 32px;
+}
+button{
+    background-color: #E53888;
+    border-radius: 10px;
+    border: 1px solid #E53888;
+    color: white;
+    width: 120px;
+    height: 33px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 15px;
+}
+button:hover{
+    background-color: white;
+    border-color: #E53888;
+    color: #E53888;
+    box-shadow: 0 3px 6px #E69DB8;
+}
+
+.quest-button{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+#task-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 45%;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px gainsboro;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 11px;
+}
+.card-title{
+    margin: 0;
+}
+.card-priority{
+    font-size: 11px;
+    background-color: #E53888;
+    color: white;
+    width: auto;
+    height: 23px;
+    border-radius: 3px;
+    text-align: center;
+}
+.priority{
+    padding: 3px;
+}
+a{
+    padding-left: 5px;
+}
+.btn{
+    cursor: pointer;
+}
+
+@media (max-width: 400px){
+    section{
+        width: 200px;
+        padding: 10px;
+    }
+    input, select{
+        width: 80px;
+        height: 20px;
+        font-size: 12px;
+    }
+}
+@media (min-width: 400px) and (max-width: 600px){
+    section{
+        width: 400px;
+        padding: 15px;
+    }
+    input, select{
+        width: 100px;
+        font-size: 13px;
+    }
+}
+@media (min-width:600px) and (max-width: 800px){
+    section{
+        width: 600px;
+    }
+    input, select{
+        width: 170px;
+        font-size: 14px;
+    }
+}
